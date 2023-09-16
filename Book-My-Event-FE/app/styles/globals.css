@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-Regular-v1.27.ttf");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-Italic-v1.27.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-Medium-v1.27.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-MediumItalic-v1.27.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-Bold-v1.27.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../../public/Fonts/GoogleSans/GoogleSans-BoldItalic-v1.27.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  @apply m-0 p-0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body;
+}
+
+.landing {
+  background-image: url("/LandingPage/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @apply bg-black bg-opacity-90;
+}
